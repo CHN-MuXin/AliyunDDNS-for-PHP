@@ -20,13 +20,13 @@
 ## Linux
 
 
-修改 /etc/crontab 文件添加定时任务
+修改 /etc/crontab 文件尾部添加定时任务
 
 
-* 0,6,12,18 * * * root php /data/AliyunDNS/index.php
+0 * * * * root php /data/AliyunDNS/index.php
 
 
-上面的定时任务是 每天的  0,6,12,18 点 以root用户 执行一次域名解析任务
+上面的定时任务是 每小时 以root用户 执行一次域名解析任务
 
 
 
