@@ -201,7 +201,7 @@ function getLocalGlobalIpv6Addr($interface) {
 
 		case 'Darwin':
 			// inet6 2001:xxxx:xxxx::xxxx prefixlen 64 autoconf [secured|temporary] 
-			$pattern = '/inet6 ([0-9a-f:]+)%'.$interface.' prefixlen \\d+ autoconf secured/';
+			$pattern = '/inet6 ([0-9a-f:]+) prefixlen \\d+ autoconf secured/';
 			$ip_info = shell_exec('ifconfig '.$interface);
 			break;
 
